@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 llm =  ChatGoogleGenerativeAI(
-    model="gemini-3-flash-preview",
+    model="gemini-3.1-flash-lite",
     temperature=0)
 
 

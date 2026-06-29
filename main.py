@@ -1,3 +1,6 @@
-from src.tools.tools import web_search, scrape_url
+from src.pipeline.pipeline import run_research_pipeline
 
-print(scrape_url('https://guides.library.georgetown.edu/ai/news'))
+topic = 'The impact of AI on job market in 2026'
+
+run_research_pipeline(topic=topic)
+

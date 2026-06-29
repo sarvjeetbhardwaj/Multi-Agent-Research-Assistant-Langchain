@@ -12,6 +12,9 @@ tavily_search = tavily.TavilyClient(api_key=os.getenv('TAVILY_API_KEY'))
 
 @tool
 def web_search(query:str)->str:
+    """
+    The will use tavily search to query the web
+    """
     results = tavily_search.search(query=query, max_results=10)
     
     out_results = []
